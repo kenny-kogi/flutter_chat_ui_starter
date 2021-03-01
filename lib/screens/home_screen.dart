@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_ui_starter/widgets/category_selector.dart';
+import 'package:flutter_chat_ui_starter/widgets/charts_section.dart';
 import 'package:flutter_chat_ui_starter/widgets/favorite_contact.dart';
 
 
@@ -58,13 +59,17 @@ class _HomeScreenState extends State<HomeScreen> {
               
               
               ),
-             child: FavoriteContact(),
+             child: Column(children: [
+               FavoriteContact(),
+               ChatsSection(),
+
+             ],),
             
             ),
+          
             
           ),
-
-      ],
+],
   )
     );
   }
